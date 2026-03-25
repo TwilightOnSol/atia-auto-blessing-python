@@ -1,0 +1,67 @@
+# Atia's Shrine Automation
+
+Automated Atia's Blessing, runs every day automatically.
+
+![blessing](https://github.com/dwi/atia-shrine-automated/assets/1337260/feda58fc-4829-4684-9b40-dac8735dbc05)
+
+> **Warning** > **Run it locally and preferably on an encrypted volume, your private keys can be exposed!**
+
+## Prerequisites
+
+- Python 3.10+
+- pip (Python package manager)
+
+## Installation
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Copy example privateKeys
+
+```bash
+cp privateKeys.example privateKeys
+```
+
+### Edit `privateKeys` and add your keys and optional delegatees
+
+Example #1:
+
+> [!NOTE]
+> Use `prayerPrivateKey` to pray for selected delegatees (max 5). If you want to pray for the PK address as well, you have to include it in the list.
+
+```json
+{
+  "keys": [
+    {
+      "prayerPrivateKey": "0x9165004be40eb157edf922afe9decec26cc930d208877b547dba58039a786e1a",
+      "delegateeAddresses": ["0x40ae3EfE4bE1Bb0402c075C0E42902Ba5B930682", "0x021E95f0043c4E94dd39a5cB008CF2aF2Ca187Cf"]
+    }
+  ]
+}
+```
+
+Example #2:
+
+> [!NOTE]
+> Use `prayerPrivateKey` to pray for itself, you don't have to specify `delegateeAddresses`
+
+```json
+{
+  "keys": [
+    {
+      "prayerPrivateKey": "0x9165004be40eb157edf922afe9decec26cc930d208877b547dba58039a786e13"
+    }
+  ]
+}
+```
+
+### Start Application
+
+```bash
+python src/main.py
+```
+
+The application will run continuously and execute the daily blessing at 05:05 UTC.

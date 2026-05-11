@@ -1,17 +1,9 @@
-# atia-auto-blessing-python
+# Atia Auto-Blessing Python
 
 ## Overview
-This repository is part of the TwilightOnSol ecosystem. It has been audited and refactored for better performance and maintainability.
+A Python-based automation script for the Atia blessing mechanic in Axie Infinity. It automates the daily blessing process to ensure players never miss their rewards.
 
-## Project Structure
-- .gitignore
-- COMPLETION_REPORT.md
-- FINAL_SUMMARY.txt
-- FINAL_VERSION.txt
-- FIXES_APPLIED.md
-- FIX_SUMMARY.txt
-- IMPORT_FIX.md
-- INDEX.md
-- INSTALLER_README.txt
-- LICENSE
-- ...
+## Features
+- **Automated Blessing**: Handles the interaction with the Atia shrine automatically.
+- **Robust Error Handling**: Includes fixes for common import and execution issues.
+- **Detailed Reporting**: Generates completion reports and summaries after each run.

@@ -135,10 +135,10 @@ def check_blessings() -> None:
 
 def is_activated(address: str) -> Dict[str, Any]:
     """Check if an address has already activated their blessing today.
-    
+
     Args:
         address: The wallet address to check
-    
+
     Returns:
         Dictionary with 'status' (bool) and 'streak' (int)
     """
@@ -155,11 +155,11 @@ def is_activated(address: str) -> Dict[str, Any]:
 
 def activate_streak(account: Account, delegatee: str) -> Dict[str, Any]:
     """Activate the blessing streak for a delegatee address.
-    
+
     Args:
         account: The signer account (from private key)
         delegatee: The address to activate blessing for
-    
+
     Returns:
         Dictionary with 'status' (bool) and optional 'streak' (int)
     """
